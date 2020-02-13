@@ -8,8 +8,7 @@ h2 {
 }
 span {
   font-family: Lato, sans-serif;
-
-  .glossary-key {
-    font-weight: bold;
-  }
+}
+.glossary-key {
+  font-weight: bold;
 }
