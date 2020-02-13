@@ -1,22 +1,26 @@
-<link href="styles.css" rel="stylesheet">
-<h1>Kubernetes Glossary</h1>
-<h2>Key Terms</h2><br>
-<span>Container: </span><span>Similar to a VM but more lightweight. They bundle and run your application. In production a container can be run on any computer that has a conterization platform</span><br>
-<span>Pod: </span><span>Describes an application running on Kubernetes. It can contain one or more coupled containers that make up the app e.g. an api service and a database proxy</span><br>
-<span>Deployment: </span><span>Defines the state of the application and Kubernetes can use this to make sure the clusters match your desired state. It can handle replica sets and roll backs</span><br>
-<span>Service: </span><span>Bridges mortal pods and the end user to ensure pods are never accessed directly</span><br>
-<span>Secret: </span><span>Provides a way to distribute secret data to pods via the deployment yaml</span><br>
-<span>Ingress: </span><span>Manages inbound connection to the cluster and disributes traffic to your services</span><br>
-<h2>Further Terms</h2><br>
-<span>Health Checks: </span><span>If your application malfunctions, the pod and container could still be running unaware of the malfunction. Running periodic health checks can ensure traffic won't be routed to pods that do not pass the check</span><br>
-<span>Persistent Volumes: </span><span>Allows you to store data outside the container. Useful for when you want data to persist after the container stops e.g. running a database using persistent volumes</span><br>
-<span>Autoscaling: </span><span>Using metrics, can automatically scale deployments and replica sets</span><br>
-<h2>Docker</h2><br>
-<span>Docker: </span><span>Container software to run containers locally or in production</span><br>
-<span>Docker engine: </span><span>Software to make and run docker images</span><br>
-<span>Docker registry: </span><span>Stores and fetches docker images. Makes an image available to Kubernetes</span><br>
-<span>Dockerfile: </span><span>Describes how to build a container, each container needs a dockerfile</span><br>
-<span>Image: </span><span>This is what is built from the dockerfile and what runs your container</span><br>
-<h2>Misc</h2><br>
-<span>Minikube: </span><span>Software that spins up a kubernetes cluster on your machine</span><br>
-<span>Kubectl: </span><span>Software to interact with Kubernetes from the cli (equivalent of the web UI)</span><br>
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Kubernetes Glossary</h1>
+    <h2>Key Terms</h2><br>
+    <span>Container: </span><span>Similar to a VM but more lightweight. They bundle and run your application. In production a container can be run on any computer that has a conterization platform</span><br>
+    <span>Pod: </span><span>Describes an application running on Kubernetes. It can contain one or more coupled containers that make up the app e.g. an api service and a database proxy</span><br>
+    <span>Deployment: </span><span>Defines the state of the application and Kubernetes can use this to make sure the clusters match your desired state. It can handle replica sets and roll backs</span><br>
+    <span>Service: </span><span>Bridges mortal pods and the end user to ensure pods are never accessed directly</span><br>
+    <span>Secret: </span><span>Provides a way to distribute secret data to pods via the deployment yaml</span><br>
+    <span>Ingress: </span><span>Manages inbound connection to the cluster and disributes traffic to your services</span><br>
+    <h2>Further Terms</h2><br>
+    <span>Health Checks: </span><span>If your application malfunctions, the pod and container could still be running unaware of the malfunction. Running periodic health checks can ensure traffic won't be routed to pods that do not pass the check</span><br>
+    <span>Persistent Volumes: </span><span>Allows you to store data outside the container. Useful for when you want data to persist after the container stops e.g. running a database using persistent volumes</span><br>
+    <span>Autoscaling: </span><span>Using metrics, can automatically scale deployments and replica sets</span><br>
+    <h2>Docker</h2><br>
+    <span>Docker: </span><span>Container software to run containers locally or in production</span><br>
+    <span>Docker engine: </span><span>Software to make and run docker images</span><br>
+    <span>Docker registry: </span><span>Stores and fetches docker images. Makes an image available to Kubernetes</span><br>
+    <span>Dockerfile: </span><span>Describes how to build a container, each container needs a dockerfile</span><br>
+    <span>Image: </span><span>This is what is built from the dockerfile and what runs your container</span><br>
+    <h2>Misc</h2><br>
+    <span>Minikube: </span><span>Software that spins up a kubernetes cluster on your machine</span><br>
+    <span>Kubectl: </span><span>Software to interact with Kubernetes from the cli (equivalent of the web UI)</span><br>
+</body>
