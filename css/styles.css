@@ -12,3 +12,7 @@ span {
 .glossary-key {
   font-weight: bold;
 }
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
